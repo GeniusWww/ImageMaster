@@ -11,13 +11,26 @@
         <text class="text1">阿松图片大师</text>
         <el-menu-item index="/cut" >裁切图片</el-menu-item>
         <el-menu-item index="/compress">压缩图片</el-menu-item>
+        <el-menu-item index="/watermark">去除水印</el-menu-item>
+        <el-menu-item index="/subtitle">字幕生成器</el-menu-item>
+        <el-button 
+          type="primary" 
+          class="signin" 
+          @click="$router.push('/signinup')">登录</el-button>
     </el-menu> 
 
   </el-header>
   <el-main>
     <router-view></router-view>
   </el-main>
-  
+  <el-footer>
+    <a href="https://github.com/GeniusWww" target="_blank">
+    <img src="../assets/github-fill.png" alt="">
+  </a>
+  <a href="https://okjk.co/mWL1os" target="_blank">
+    <img src="../assets/jike.png" alt="">
+  </a>
+  </el-footer>
 </el-container>
 </template>
 
@@ -60,6 +73,12 @@ const activeIndex = ref('/cut')
   .text1 {
     position: absolute;
     left: 60px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .signin{
+    position: absolute;
+    right: 1px;
     height: 40px;
     margin: 10px 0;
   }

@@ -15,7 +15,7 @@
             :auto-upload="false"
             :show-file-list="false"
         >
-            <el-button size="small" type="primary" v-if="ImgUrl===''">上传图片上传</el-button>
+            <el-button size="small" type="primary" v-if="ImgUrl===''">上传图片</el-button>
 
             <el-button size="small" type="primary" v-else>重新上传</el-button>
            
