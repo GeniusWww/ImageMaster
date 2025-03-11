@@ -15,7 +15,7 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: '/cut' 
+        redirect: '/subtitle' 
       },
       {
         path: '/cut',

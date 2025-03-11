@@ -33,8 +33,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, defineComponent } from 'vue'
 import 'vue-cropper/dist/index.css'
+
+defineComponent({
+  name: 'ImageCompress'
+})
+
 const imageUrl = ref('')
 const quality = ref('')
 const handleChange = (file) => {

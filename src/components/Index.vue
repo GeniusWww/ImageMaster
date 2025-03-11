@@ -1,7 +1,7 @@
 <template>
  <el-container>
   <el-header>
-    <el-menu :default-active="activeIndex" 
+    <el-menu :default-active="$route.path" 
     class="el-menu-demo" 
     mode="horizontal" 
     @select="handleSelect"
@@ -21,7 +21,9 @@
 
   </el-header>
   <el-main>
-    <router-view></router-view>
+    <KeepAlive :include="['ImageCut', 'ImageCompress', 'WaterMark', 'SubtitleGenerator']">
+      <router-view></router-view>
+    </KeepAlive>
   </el-main>
   <el-footer>
     <a href="https://github.com/GeniusWww" target="_blank">
@@ -35,9 +37,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+//import { ref } from 'vue'
 
-const activeIndex = ref('/cut')
+//const activeIndex = ref('/cut')
 </script>
 
 <style scoped>

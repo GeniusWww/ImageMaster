@@ -28,7 +28,12 @@
 </template>
 <script setup>
 import { VueCropper } from 'vue-cropper'
-import {ref} from "vue"
+import {ref, defineComponent} from "vue"
+
+defineComponent({
+  name: 'ImageCut'
+})
+
 const ImgUrl = ref('')
 const cropperRef = ref(null)
 //const outputType = ref('png')
@@ -53,8 +58,6 @@ const downloadCroppedImage = () => {
       // 模拟点击下载链接
       document.body.appendChild(link);
       link.click();
-      
-      // 移除临时的 <a> 元素
       document.body.removeChild(link);
     });
   }
