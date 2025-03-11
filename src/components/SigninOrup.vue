@@ -58,7 +58,7 @@ import qs from 'qs'
 				},
 				background:{
 						// 背景图片地址
-					backgroundImage: 'url(' + require('../../public/background_lg.jpg') + ')',
+					backgroundImage: 'url(' + require('../../public/static/background_lg.jpg') + ')',
 					// 背景图片是否重复
 					backgroundRepeat: 'no-repeat',
 					// 背景图片大小
