@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-
+// 确保引入了 Element Plus 的样式
+import 'element-plus/dist/index.css'
 // 导入Element Plus
 import ElementPlus from 'element-plus'
 // 导入Element Plus图标
@@ -21,5 +22,4 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 app.mount('#app')
 
-// 确保引入了 Element Plus 的样式
-import 'element-plus/dist/index.css'
+
