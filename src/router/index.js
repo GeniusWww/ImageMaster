@@ -5,6 +5,7 @@ import WaterMark from '@/components/WaterMark.vue'
 import SigninOrup from '@/components/SigninOrup.vue'
 import Index from '@/components/Index.vue'
 import SubtitleGenerator from '@/components/SubtitleGenerator.vue'
+import PosterMaster from '@/components/PosterMaster.vue'
 
 const routes = [
   
@@ -36,6 +37,11 @@ const routes = [
         path: '/subtitle',
         name: 'SubtitleGenerator',
         component: SubtitleGenerator
+      },
+      {
+        path: '/poster',
+        name: 'PosterMaster',
+        component: PosterMaster
       }
     ]
   },

@@ -13,6 +13,7 @@
         <el-menu-item index="/compress">压缩图片</el-menu-item>
         <el-menu-item index="/watermark">添加水印</el-menu-item>
         <el-menu-item index="/subtitle">字幕生成器</el-menu-item>
+        <el-menu-item index="/poster">豆包海报</el-menu-item>
         <el-button 
           type="primary" 
           class="signin" 
