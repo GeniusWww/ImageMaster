@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <!-- 左侧面板 -->
       <div class="left-panel">
-        <h2>豆包海报生成</h2>
+        <h2>自定义海报生成</h2>
         <div class="input-section">
           <el-input
             v-model="prompt"
@@ -81,7 +81,7 @@
       </div>
           <!-- 二维码设置 -->
       <div class="qrcode-section">
-        <h3>二维码设置</h3>
+        <h3>二维码/logo设置</h3>
         <el-upload
           class="qrcode-upload"
           action="#"
@@ -89,7 +89,7 @@
           :show-file-list="false"
           accept="image/*"
           @change="handleQRCodeUpload">
-          <el-button type="primary" plain>上传二维码</el-button>
+          <el-button type="primary" plain>上传</el-button>
         </el-upload>
         <div v-if="qrcodePreview" class="qrcode-preview">
           <!-- <img :src="qrcodePreview" class="qrcode-image" /> -->
